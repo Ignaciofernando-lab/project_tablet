@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{   
+    background-color: rgb(21, 100, 70);
+    
+}
+
+/* estilos de mobile */
+
+header{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul{
+
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li{
+    list-style: none;
+
+}
+
+header nav ul li a {
+
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+
+main{
+
+    padding: 40px;
+}
+
+
+main h1{
+
+    text-align: center;
+    color: whitesmoke;
+  
+}
+
+main .div-main-uno {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .div-main-uno img{
+     width: 50%;
+}
+
+main .div-main-uno p{
+    color: whitesmoke;
+    text-align: center;
+}
+
+main .div-main-dos {
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px;
+    align-items: center;
+    
+}
+
+main .div-main-dos .div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+
+main .div-main-dos div img{
+
+    width: 30%;
+    
+}
+
+
+footer  {
+    text-align: center;
+    color: whitesmoke;
+    
+
+}
+
+@media screen and (min-width: 768px){
+    header{
+        justify-content: space-around;
+    } 
+
+    .div-main-uno{
+        flex-direction: row;
+    }
+
+    .div-main-dos{
+        margin-top: 20px;
+
+    }
+
+    .div-main-dos div img{
+        margin-top: 20px;
+        width: 65%;
+
+
+    }
+
+    }
+
+
